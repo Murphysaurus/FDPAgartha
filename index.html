@@ -1,0 +1,616 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta property="og:title" content="">
+  <meta property="og:type" content="">
+  <meta property="og:url" content="">
+  <meta property="og:image" content="">
+
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="apple-touch-icon" href="icon.png">
+  <!-- Place favicon.ico in the root directory -->
+
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/GeneralClasses.css">
+
+  <meta name="theme-color" content="#fafafa">
+
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+
+  <script src="./js/HTMLScripts/Competences.js"></script>
+
+</head>
+
+<body>
+  <div class="tabs">
+    <div class="tab-registers">
+      <button class="active-tab"> Presentation Generale </button>
+      <button> Voies / Spe </button>
+      <button> Competences </button>
+    </div>
+    <div class="tab-bodies">
+
+
+      <div style="display:block;">
+        <div class="Presentation">
+
+          <div class="infoJoueur">
+
+          </div>
+
+          <div class="infoGenerales Horizontalbox">
+            <div class="VerticalBox">
+              <div class="Horizontalbox">
+                <label>Age :</label>
+                <input id="Age" type="text">
+              </div>
+              <div class="Horizontalbox">
+                <label>Poids :</label>
+                <input id="Poids" type="text">
+              </div>
+              <div class="Horizontalbox">
+                <label>Taille :</label>
+                <input id="Taille" type="text">
+              </div>
+            </div>
+            <div class="VerticalBox">
+              <div class="Horizontalbox">
+                <label>Distinction :</label>
+                <input id="Distinction" type="text">
+              </div>
+              <div class="Horizontalbox">
+                <label>Experience :</label>
+                <input id="Experience" type="text">
+              </div>
+            </div>
+          </div>
+
+          <div class="competences">
+            <table>
+              <thead>
+              <tr>
+                <td>
+                  <label>Competences</label>
+                </td>
+              </tr>
+                <tr>
+                  <td>
+                    <label>Principales</label>
+                  </td>
+                  <td>
+                    <label>Secondaires</label>
+                  </td>
+                </tr>
+              </thead>
+              <tbody>
+              <tr>
+                <td style="justify-content: space-between">
+                  <div class="Horizontalbox">
+                    <label>Physique :</label>
+                    <input id="compPhy" type="number">
+                  </div>
+                </td>
+                <td style="justify-content: space-between">
+                  <div class="Horizontalbox">
+                    <label>Resistance :</label>
+                    <input id="compRes" type="number">
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td style="justify-content: space-between">
+                  <div class="Horizontalbox">
+                    <label>Volonte :</label>
+                    <input id="compVol" type="number">
+                  </div>
+                </td>
+                <td style="justify-content: space-between">
+                  <div class="Horizontalbox">
+                    <label>Occultisme :</label>
+                    <input id="compOcc" type="number">
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td style="justify-content: space-between">
+                  <div class="Horizontalbox">
+                    <label>Intelligence :</label>
+                    <input id="compInt" type="number">
+                  </div>
+                </td>
+                <td style="justify-content: space-between">
+                  <div class="Horizontalbox">
+                    <label>Perception :</label>
+                    <input id="compPer" type="number">
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td style="justify-content: space-between">
+                  <div class="Horizontalbox">
+                    <label>Agilite :</label>
+                    <input id="compAgi" type="number">
+                  </div>
+                </td>
+                <td style="justify-content: space-between">
+                  <div class="Horizontalbox">
+                    <label>Reflexe :</label>
+                    <input id="compRef" type="number">
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td style="justify-content: space-between">
+                  <div class="Horizontalbox">
+                    <label>Adaptabilite :</label>
+                    <input id="compAda" type="number">
+                  </div>
+                </td>
+                <td style="justify-content: space-between">
+                  <div class="Horizontalbox">
+                    <label>Charisme :</label>
+                    <input id="compCha" type="number">
+                  </div>
+                </td>
+              </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div class="metierEtSouillure">
+            <div class="metier VerticalBox">
+              <div class="Horizontalbox">
+              </div>
+              <div class="Horizontalbox">
+                <label id="BonusMetier"></label>
+              </div>
+            </div>
+            <div class="souillure">
+
+            </div>
+          </div>
+
+          <div class="combat">
+            <div class="corps">
+              <div class="blessures">
+
+              </div>
+              <div class="defense">
+
+              </div>
+            </div>
+            <div class="weapons">
+
+            </div>
+          </div>
+
+          <div class="historic">
+            <div class="avantages">
+
+            </div>
+            <div class="faiblesses">
+
+            </div>
+          </div>
+
+          <div class="equipments">
+
+          </div>
+        </div>
+      </div>
+
+
+
+      <div style="display:none;">
+        <div class="VoieSpe">
+          <div class="Horizontalbox TableauVoie">
+            <table id="TableauVoieUn">
+              <thead>
+                <tr>
+                  <th colspan="2">
+                    <div style="display: flex; flex-direction: row">
+                      <label>Première voie</label>
+                      <select name="VoieUn" id="VoieUn">
+                        <option value="arbaletrier">arbaletrier</option>
+                        <option value="artistique">artistique</option>
+                        <option value="ChasseurDhomme">Chasseur D'homme</option>
+                        <option value="Contrebande">Contrebande</option>
+                        <option value="Danger">Danger</option>
+                        <option value="Discours">Discours</option>
+                        <option value="Escrimeur">Escrimeur</option>
+                        <option value="Investigation">Investigation</option>
+                        <option value="Linguistique">Linguistique</option>
+                        <option value="Maudit">Maudit</option>
+                        <option value="Mécanique">Mécanique</option>
+                        <option value="Olympique">Olympique</option>
+                        <option value="Pugiliste">Pugiliste</option>
+                        <option value="Sante">Sante</option>
+                        <option value="Survie">Survie</option>
+                        <option value="Tireur">Tireur</option>
+                      </select>
+                    </div>
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+              <tr>
+                <td>
+                  <div style="display: flex; flex-direction: row; justify-content: space-between">
+                    <div style="display: flex; flex-direction: row">
+                      <input type="radio">
+                      <label> 1</label>
+                    </div>
+                    <Label>Texte Rang 1</Label>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <div style="display: flex; flex-direction: row; justify-content: space-between">
+                    <div style="display: flex; flex-direction: row">
+                      <input type="radio">
+                      <label> 2</label>
+                    </div>
+                    <Label>Texte Rang 2</Label>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <div style="display: flex; flex-direction: row; justify-content: space-between">
+                    <div style="display: flex; flex-direction: row">
+                      <input type="radio">
+                      <label> 3</label>
+                    </div>
+                    <Label>Texte Rang 3</Label>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <div style="display: flex; flex-direction: row; justify-content: space-between">
+                    <div style="display: flex; flex-direction: row">
+                      <input type="radio">
+                      <label> 4</label>
+                    </div>
+                    <Label>Texte Rang 4</Label>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <div style="display: flex; flex-direction: row; justify-content: space-between">
+                    <div style="display: flex; flex-direction: row">
+                      <input type="radio">
+                      <label> 5</label>
+                    </div>
+                    <Label>Texte Rang 5</Label>
+                  </div>
+                </td>
+              </tr>
+              </tbody>
+            </table>
+
+            <table id="TableauVoieDeux">
+              <thead>
+              <tr>
+                <th colspan="2">
+                  <div style="display: flex; flex-direction: row">
+                    <label for="VoieUn">Deuxieme voie</label>
+                    <select name="VoieUn" id="VoieUn">
+                      <option value="arbaletrier">arbaletrier</option>
+                      <option value="artistique">artistique</option>
+                      <option value="ChasseurDhomme">Chasseur D'homme</option>
+                      <option value="Contrebande">Contrebande</option>
+                      <option value="Danger">Danger</option>
+                      <option value="Discours">Discours</option>
+                      <option value="Escrimeur">Escrimeur</option>
+                      <option value="Investigation">Investigation</option>
+                      <option value="Linguistique">Linguistique</option>
+                      <option value="Maudit">Maudit</option>
+                      <option value="Mécanique">Mécanique</option>
+                      <option value="Olympique">Olympique</option>
+                      <option value="Pugiliste">Pugiliste</option>
+                      <option value="Sante">Sante</option>
+                      <option value="Survie">Survie</option>
+                      <option value="Tireur">Tireur</option>
+                    </select>
+                  </div>
+                </th>
+              </tr>
+              </thead>
+              <tbody>
+              <tr>
+                <td>
+                  <div style="display: flex; flex-direction: row; justify-content: space-between">
+                    <div style="display: flex; flex-direction: row">
+                      <input type="radio">
+                      <label> 1</label>
+                    </div>
+                    <Label>Texte Rang 1</Label>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <div style="display: flex; flex-direction: row; justify-content: space-between">
+                    <div style="display: flex; flex-direction: row">
+                      <input type="radio">
+                      <label> 2</label>
+                    </div>
+                    <Label>Texte Rang 2</Label>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <div style="display: flex; flex-direction: row; justify-content: space-between">
+                    <div style="display: flex; flex-direction: row">
+                      <input type="radio">
+                      <label> 3</label>
+                    </div>
+                    <Label>Texte Rang 3</Label>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <div style="display: flex; flex-direction: row; justify-content: space-between">
+                    <div style="display: flex; flex-direction: row">
+                      <input type="radio">
+                      <label> 4</label>
+                    </div>
+                    <Label>Texte Rang 4</Label>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <div style="display: flex; flex-direction: row; justify-content: space-between">
+                    <div style="display: flex; flex-direction: row">
+                      <input type="radio">
+                      <label> 5</label>
+                    </div>
+                    <Label>Texte Rang 5</Label>
+                  </div>
+                </td>
+
+              </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div class="VerticalBox TableauSpe">
+            <label>Spécialisation de Chasseur</label>
+            <select name="ChoiSpe" id="ChoiSpe">
+              <option name="AmAssassin">Art Martial : Assassin</option>
+              <option name="AmEpeiste">Art Martial : Epeiste</option>
+              <option name="Amki">Art Martial : Ki</option>
+              <option name="AmTirailleur">Art Martial : Tirailleur</option>
+              <option name="ComRempart">Commandement : Rempart</option>
+              <option name="ComCommandant">Commandement : Commandement</option>
+              <option name="ComDresseur">Commandement : Dresseur</option>
+              <option name="ComEntrepreneur">Commandement : Entrepreneur</option>
+              <option name="EsAlchimiste">Esprit : Alchimiste</option>
+              <option name="EsEnqueteur">Esprit : Enqueteur</option>
+              <option name="EsIngenieur">Esprit : Ingénieur</option>
+              <option name="EsScientifique">Esprit : Scientifique</option>
+              <option name="TiCommando">Tireur : Commando</option>
+              <option name="TiBombardier">Tireur : Bombardier</option>
+              <option name="TiPistolero">Tireur : Pistolero</option>
+              <option name="TiTireur">Tireur : Tireur D'Elite</option>
+              <option name="MaDruide">Magie : Druide</option>
+              <option name="MaElem">Magie : Elementaliste</option>
+              <option name="MaMaudit">Magie : Maudit</option>
+              <option name="MaPredi">Magie : Predicateur</option>
+            </select>
+          </div>
+          <table style="width: 100%;">
+            <tbody style="width: 100%">
+              <tr>
+                <td>
+                  <div style="display: flex; flex-direction: row; justify-content: space-between">
+                    <div style="display: flex; flex-direction: row">
+                      <input type="radio">
+                      <label> Adepte</label>
+                    </div>
+                    <Label>Texte Adepte</Label>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <div style="display: flex; flex-direction: row; justify-content: space-between">
+                    <div style="display: flex; flex-direction: row">
+                      <input type="radio">
+                      <label> Expert</label>
+                    </div>
+                    <Label>Texte Expert</Label>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <div style="display: flex; flex-direction: row; justify-content: space-between">
+                    <div style="display: flex; flex-direction: row">
+                      <input type="radio">
+                      <label> Maître</label>
+                    </div>
+                    <Label>Texte Maître</Label>
+                  </div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+
+          <div class="Horizontalbox TableauReput">
+            <div class="VerticalBox Infamie">
+              <label>Infamie</label>
+              <div class="Horizontalbox">
+                <label>Rang : </label>
+                <input class="smallInput" type="number" maxlength="1">
+              </div>
+              <div class="Horizontalbox">
+                <label>Valeur : </label>
+                <input class="smallInput" type="number" maxlength="5">
+              </div>
+            </div>
+
+            <div class="VerticalBox Reput">
+              <label>Reputation</label>
+              <div class="Horizontalbox" style="justify-content: center">
+                <label>Valeures : </label>
+              </div>
+              <div class="Horizontalbox" style="justify-content: center">
+                <input class="smallInput" type="number" maxlength="1">
+                <label> / </label>
+                <input class="smallInput" type="number" maxlength="1">
+              </div>
+            </div>
+
+            <div class="VerticalBox Gloire">
+              <label>Gloire</label>
+              <div class="Horizontalbox">
+                <label>Rang : </label>
+                <input class="smallInput" type="number" maxlength="1">
+              </div>
+              <div class="Horizontalbox">
+                <label>Valeur : </label>
+                <input class="smallInput" type="number" maxlength="5">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+      <div style="display:none;">
+        <div class="competences">
+          <div class="Horizontalbox ColonnesComp">
+            <div class="VerticalBox TableauComp">
+              <table id="compPhysique">
+                <thead>
+                <tr>
+                  <th>
+                    PHYSIQUES
+                  </th>
+                </tr>
+                </thead>
+                <tbody>
+                </tbody>
+              </table>
+              <table>
+                <thead>
+                <tr>
+                  <th>
+                    MENTALES
+                  </th>
+                </tr>
+                </thead>
+                <tbody id="compMentales">
+                </tbody>
+              </table>
+              <table id="compIntel">
+                <thead>
+                <tr>
+                  <th>
+                    INTELLECTUELLES
+                  </th>
+                </tr>
+                </thead>
+                <tbody>
+                </tbody>
+              </table>
+            </div>
+
+            <div class="VerticalBox TableauComp">
+              <table id="compAgilite">
+                <thead>
+                <tr>
+                  <th>
+                    AGILITE
+                  </th>
+                </tr>
+                </thead>
+                <tbody>
+                </tbody>
+              </table>
+              <table id="compAdaptation">
+                <thead>
+                <tr>
+                  <th>
+                    ADAPTATION
+                  </th>
+                </tr>
+                </thead>
+                <tbody>
+                </tbody>
+              </table>
+              <table id="compCombat">
+                <thead>
+                <tr>
+                  <th>
+                    COMBAT
+                  </th>
+                </tr>
+                </thead>
+                <tbody>
+                </tbody>
+              </table>
+            </div>
+
+          </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer">
+    <div id="bonusMalus" class="VerticalBox">
+      <div id="boxText" class="Horizontalbox">
+        Modificateurs :
+      </div>
+      <div id="BonusDe" class="Horizontalbox">
+        Bonus / Malus Dé :
+        <input class="smallInput" type="number" id="ModDe" minlength="0" maxlength="2" size="4">
+
+      </div>
+      <div id="BonusComp" class="Horizontalbox">
+        Bonus / Malus Compétence :
+        <input class="smallInput" type="number" id="ModComp" minlength="0" maxlength="2" size="4">
+
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Add your site or application content here -->
+  <script src="js/vendor/modernizr-3.11.2.min.js"></script>
+  <script src="js/plugins.js"></script>
+  <script src="js/main.js"></script>
+
+  <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+  <script>
+    window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
+    ga('create', 'UA-XXXXX-Y', 'auto'); ga('set', 'anonymizeIp', true); ga('set', 'transport', 'beacon'); ga('send', 'pageview')
+  </script>
+  <script src="https://www.google-analytics.com/analytics.js" async></script>
+  <script src="js/HTMLScripts/Onglets.js"></script>
+  <script>
+    $(document).ready(function(){
+      loadCompetences();
+    });
+  </script>
+</body>
+
+</html>
+
